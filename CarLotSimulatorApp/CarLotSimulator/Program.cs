@@ -1,4 +1,5 @@
-﻿using System;
+﻿//JESUS
+using System;
 
 namespace CarLotSimulator
 {
@@ -15,6 +16,46 @@ namespace CarLotSimulator
 
 
             //Now that the Car class is created we can instanciate 3 new cars
+
+            car mycar1=new car();
+
+            mycar1.Make = "Lambo";
+            mycar1.Year = 2020;
+            mycar1.isdrivable = true;
+            mycar1.Model = "Diablo";
+            mycar1.EingineNoise = "vroom";
+            mycar1.HonkNoise = "hONKKKKK";
+            mycar1.MakeEngineNoise(mycar1.EingineNoise);
+            //-Be speciif when you call a method in a class because since there are multiple of the same properties in the class. 
+            mycar1.MakeHonkNoise(mycar1.HonkNoise);
+            car mycar2 = new car();
+
+            mycar2.Make = "Ferrari";
+            mycar2.Year = 1990;
+            mycar2.isdrivable = false;
+            mycar2.Model = "Enzo";
+            mycar2.EingineNoise = "Vrumm";
+            mycar2.HonkNoise = "Hooooonk";
+            mycar2.MakeHonkNoise(mycar2.HonkNoise);
+            mycar2.MakeEngineNoise(mycar2.EingineNoise);
+
+
+            car mycar3 = new car();
+            mycar3.Make = "Toyota";
+            mycar3.Year = 2018;
+            mycar3.isdrivable = true;
+            mycar3.Model = "Camry";
+            mycar3.EingineNoise = "Silent";
+            mycar3.HonkNoise = "Yeeehaww";
+            mycar3.MakeEngineNoise(mycar3.EingineNoise);
+            mycar3.MakeHonkNoise(mycar3.HonkNoise);
+
+
+
+
+            //So here we are using objext initilizer syntax
+            var mycar4 = new car() { Year = 2013, Make = "Ford, " };
+
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
