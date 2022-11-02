@@ -1,4 +1,4 @@
-﻿
+﻿//JESUS
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +23,8 @@ namespace CarLotSimulator
 
         public bool isdrivable { get; set; }
         
+
+        //Here we passed a string called eingine noise into the method
         public void MakeEngineNoise( string EingineNoise)
         {
             Console.WriteLine(EingineNoise);
